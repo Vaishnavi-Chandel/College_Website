@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nitkkr website creation</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,400;1,100;1,300;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="mysite.htm"><img src="https://upload.wikimedia.org/wikipedia/en/7/75/National_Institute_of_Technology%2C_Kurukshetra_Logo.png" class="img-logo"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="mysite.htm"><b>HOME</b></a></li>
+					<li><a href="#"><b>INSTITUTE</b></a>
+						<div class="submenu">
+							<ul>
+								<li><a href="instprof.htm">Intitute Profile</a></li>
+								<li><a href="loc.htm">Location</a></li>
+								<li><a href="rule.htm">Services and Rules</a></li>
+								<li><a href="imggal.htm">Photo Gallery</a></li>
+							</ul>
+						</div>
+
+					</li>
+					<li><a href="#"><b>ADMINISTRATION</b></a>
+                        <div class="submenu">
+							<ul>
+								<li><a href="chair.htm">Chairperson</a></li>
+								<li><a href="dir.htm">Director</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#"><b>ACADEMICS</b></a>
+						<div class="submenu">
+							<ul>
+								<li><a href="proj.htm">Project</a></li>
+								<li><a href="fund.htm">Funds</a></li>
+							</ul>
+						</div>
+
+					</li>
+					<li><a href="#"><b>DEPARTMENTS</b></a>
+					<div class="submenu">
+							<ul>
+								<li><a href="cse.htm">Computer Engineering</a></li>
+								<li><a href="civ.htm">Civil Engineering</a></li>
+								<li><a href="mec.htm">Mechanical Engineering</a></li>
+								<li><a href="elec.htm">Electrical Engineering</a></li>
+							</ul>
+						</div></li>
+					<li><a href="try1.htm"><b>STUDENT LIFE</b></a></li>
+					<li><a href="try3.htm"><b>CAMPUS</b></a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+	
+		<div class="text-box">
+			<h1>National Institute of Technology, Kurukshetra</h1>
+			<h1>Institute of National Importance</h1>
+			<a href="https://nitkkr.ac.in/" class="hero-btn">Click to enter college's official website</a>
+		</div>
+	</section>
+	<!---notification--->
+	<section class="notification">
+<div class="row">
+	<div class="course-col">
+		<h3>Announcements</h3>
+		<p>Civil Engineering Department Elective Notice<br>Notification regarding the Guidelines SOPs of the Institute - COVID-19 Dated 05-11-2020<br>DETAILS OF ADMISSION PROCESS IN B.TECH PROGRAMMES THROUGH JOSAA-2020/CSAB-2020 IN ACADEMIC YEAR 2020-21<br>Vigilance Awareness Week 27th October to 2nd November, 2020<br>Important notice regarding Income Certificate for relaxation in tuition fee in B.Tech. Programmes(Provisionally admitted through JOSAA and CSAB 2020 counselling process)<br>Regarding extension of submission of M.Tech. Thesis and Dissertation<br>Regarding reporting schedule of B.Tech.M.Tech MBA MCA for AY 2020-21<br>Notification regarding promotion in 5th and 7th semester  for B.Tech. students of  2017 & 2018 batch having reappears in 1st and or 2nd year <br>Regarding reporting at NIT Kurukshetra for candidates admitted in B.Tech. Programmes through JOSAA-2020 CSAB-2020<br>PhD written test and interview Guidelines for SCHOOL OF REENEWABLE ENERGY AND EFFICIENCY<br>International Online Conference on Smart Grid Energy Systems and Control(March 19-21, 2021)</p>
+	</div>
+	<div class="course-col">
+		<h3>Notifications</h3>
+		<p>Supplementary Provisional Re-Appear cut list of InternalExternal Re-Appear Examinations (MayJune-2021) [Phase-XIV]
+<br>Supplementary Detained List of Practical End Semester Examinations [June-2021]<br>PR. Schedule B.Tech. First year MED-21-1093<br>Notification dated 15.06.2021 regarding closure of Institute till further orders<br>End Sem Practical Examination Schedule MED-21-1094<br>Detained List of Practical End Semester Examinations June 2021 [B.Tech 2nd Semester]<br>Second merit List MBA Admission 2021-23<br>First merit List MBA Admission 2021-23<br>Date Sheet for Theory Examinations of B.Tech. 1st Year for June-2021<br>International Conference on Advances in Data Computing, Communication and Security (I3CS) 2021 in online mode during  08-10 September, 2021<br>Gazetted holidays for the year 2021</p>
+	</div>
+</div>
+
+	</section>
+<!---footer--->
+<section class="footer">
+	<p>Copyright &copy; 2021 All Rights Reserved. NIT Kurukshetra</p>
+</section>
+
+
+
+
+
+
+<!---- Javascript----->
+	<script type="text/javascript">
+		var navLinks = document.getElementsByClassName('nav-links');
+		function showMenu()
+		{
+			navLinks.style.right = "0";
+		}
+		function hideMenu()
+		{
+			navLinks.style.right = "-200px";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto Mono', monospace;
+}
+.header
+{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(255,255,255,0.25),rgba(255,255,255,0.25)),url(https://qph.fs.quoracdn.net/main-qimg-a6633a67aac3a7a92e09193b87e5aac3);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+nav
+{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+
+}
+nav img{
+    width: 150px;
+    margin :5px 5px
+}
+
+.nav-links
+{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li
+{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+	background-color: black;
+}
+
+.nav-links ul li a
+{
+	color: whitesmoke;
+	text-decoration: none;
+	font-size: 15px;
+	box-sizing: border-box;
+	font-family: monospace;
+
+}
+.nav-links ul li::after
+{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: red;
+	display: block;
+	margin: auto;
+	visibility: visible;
+	transition: 0.5s;
+}
+.nav-links ul li:hover::after
+{
+	width: 100%;
+}
+.submenu
+{
+	display: none;
+	transition: 1s;
+
+}
+.nav-links ul li:hover .submenu
+{
+	display: block;
+	position: absolute;
+	background-color: gray;
+	margin-top: 15px;
+	margin-left: -15px;
+}
+.nav-links ul li:hover .submenu ul
+{
+    display: block;
+    margin: 10px;
+}
+.nav-links ul li:hover .submenu ul li
+{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted white;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+.nav-links ul li:hover .submenu ul:last-child
+{
+	border-bottom: none;
+}
+.nav-links ul li:hover .submenu ul li a:hover
+{
+	color: gray;
+}
+.text-box:
+{
+	width:  90%;
+	color:  black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.text-box h1
+{
+	font-size: 50px;
+	text-align: center;
+}
+.hero-btn
+{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	border: 1.5px solid whitesmoke;
+	padding: 12px 34px;
+	font-size: 14px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+	text-align: center;
+}
+.hero-btn:hover
+{
+	border: 2px solid white;
+	background: red;
+	transition: 1s;
+
+}
+nav .fa{
+	display: none;
+}
+@media(max-width: 700px)
+{
+	.text-box h1
+	{
+		font-size: 18px;
+	}
+	.nav-links ul li
+	{
+		display: block;
+	}
+	.nav-links
+	{
+		position: absolute;
+		background: red;
+		height: 100vh;
+		width: 200px;
+		top: 0;
+		right: -200px;
+		text-align: left;
+		z-index: 2;
+		transition: 5s;
+	}
+	nav .fa{
+		display: block;
+		color: white;
+		margin: 10px;
+		font-size: 22px;
+		cursor: pointer;
+
+	}
+	.nav-links ul{
+		padding: 30px;
+	}
+}
+/*------notification------*/
+.notification
+{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+h1
+{
+	font-size: 36px;
+	font-weight: 600;
+}
+p
+{
+	color: gray;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+.row
+{
+	margin: 5%;
+	display: flex;
+	justify-content: space-between;
+
+}
+.course-col
+{
+	flex-basis: 31%;
+	background: lightgoldenrodyellow;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+    transition: 0.5s;
+}
+h3
+{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+.course-col:hover
+{
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+@media(max-width: 700px)
+{
+	.row{
+		flex-direction: column;
+
+	}
+}
+.footer
+{
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+	margin: 25px 0 20px 0;
+	font-weight: 600;
+	color: white;
+	background-color: black;
+}
+footer
+{
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+	margin: 25px 0 20px 0;
+	font-weight: 600;
+	color: white;
+	background-color: black;
+}
+#campus
+    {
+    	background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url('https://images.static-collegedunia.com/public/college_data/images/campusimage/1435406111bok_nit_kurukshetra2.jpg');
+    	background-size: 1600px 600px;
+    	background-repeat: no-repeat;
+    }
+    #life
+    {
+    	background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url('https://www.infinitecourses.com/admin/RelatedImages/Universities/634944809780579177_NIT%20Kurukshetra%20College%20Fest.JPG');
+    	
+    	background-size: 1500px 400px;
+    }
+div.column {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.column:hover {
+  border: 1px solid #777;
+}
+
+div.column img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
